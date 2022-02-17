@@ -1,44 +1,50 @@
-
 @import "_variables.scss";
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-h1{
-    color:$colorPrincipal;
+
+h1 {
+    color: $colorPrincipal;
     font-family: $fuentePrincipal;
     text-align: center;
 }
-h2{
+
+h2 {
     font-family: $fuentePrincipal;
     text-align: center;
 }
-.estrenos{
+
+.estrenos {
     display: flex;
     justify-content: space-around;
 
 }
-.peliculaEstreno{
+
+.peliculaEstreno {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-justify-content: center;
+    justify-content: center;
     align-items: center;
 }
+
 // p{
 //     text-align: center;
 // }
-.todasLasPeliculas{
+.todasLasPeliculas {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto auto;
-    justify-content:center;
+    justify-content: center;
 }
-.listaPelicula{
+
+.listaPelicula {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    
-    
+
+
 }
