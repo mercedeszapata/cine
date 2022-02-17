@@ -6,13 +6,14 @@ function comprarEntradasMayores() {
     while (edad != "no") {
         let valor = cantidadComprar * 350;
         alert("El valor de las entradas es " + valor + ". Gracias por elegirnos");
-        edad = prompt("Desea seguir comprando? si/no");
+        break;
 
         console.log("Quedan " + cantidadRestante + " entradas");
     }
     while (edad == "no") {
         alert("Esta película está prohibida para menores de 13 años.");
         alert("Gracias por venir");
+        break;
 
     }
 }
