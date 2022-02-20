@@ -1,29 +1,33 @@
-function comprarEntradasMayores() {
-    let cantidadEntradas = 50;
-    let cantidadComprar = parseInt(prompt("Ingrese la cantidad de entradas que quiere comprar"));
-    let cantidadRestante = cantidadEntradas - cantidadComprar;
-    let edad = prompt("¿Son todos los espectadores mayores de 13 años?");
-    while (edad != "no") {
-        let valor = cantidadComprar * 350;
-        alert("El valor de las entradas es " + valor + ". Gracias por elegirnos");
-        break;
+let cantidad
+let resultado
+let edadEspectadores
 
-        console.log("Quedan " + cantidadRestante + " entradas");
+function valor(numero) {
+    resultado = numero * 350;
+}
+
+function precioTotal(precio) {
+    alert("El valor de las entradas es " + precio + ". Gracias por elegirnos");
+}
+
+function edad() {
+    edadEspectadores = prompt("¿Son todos los espectadores mayores de 13 años?");
+    if (edadEspectadores != "no") {
+        cantidad = parseInt(prompt("Ingrese la cantidad de entradas que quiere comprar"));
+        resultado = valor(cantidad);
+        precioTotal(resultado);
+        
     }
-    while (edad == "no") {
-        alert("Esta película está prohibida para menores de 13 años.");
-        alert("Gracias por venir");
-        break;
+
+
+    else {
+        alert("Está prohibida la venta de entradas a menores de 13 años.");
+        
 
     }
 }
 
+function comprar() {
+    edad();
 
-function comprarEntradas() {
-    let cantidadEntradas = 50;
-    let cantidadComprar = parseInt(prompt("Ingrese la cantidad de entradas que quiere comprar"));
-    let cantidadRestante = cantidadEntradas - cantidadComprar;
-    let valor = cantidadComprar * 350;
-    alert("El valor de las entradas es " + valor + ". Gracias por elegirnos");
-    console.log("Quedan " + cantidadRestante + " entradas");
 }
