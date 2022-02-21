@@ -3,7 +3,7 @@ let resultado
 let edadEspectadores
 
 function valor(numero) {
-    resultado = numero * 350;
+    return numero * 350;
 }
 
 function precioTotal(precio) {
